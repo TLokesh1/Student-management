@@ -3,7 +3,7 @@
   "build": {
     "builder": "NIXPACKS",
     "watchPatterns": ["backend/**"],
-    "buildCommand": "cd backend && mvn clean package -DskipTests"
+    "buildCommand": "cd backend && ./mvnw clean package -DskipTests"
   },
   "deploy": {
     "startCommand": "java -jar backend/target/student-management-0.0.1-SNAPSHOT.jar",
