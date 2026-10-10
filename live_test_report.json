@@ -1,0 +1,659 @@
+[
+  {
+    "category": "Auth",
+    "testName": "Admin Login",
+    "endpoint": "POST /auth/login",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Admin JWT token received"
+  },
+  {
+    "category": "Auth",
+    "testName": "Faculty Login",
+    "endpoint": "POST /auth/login",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Faculty JWT token received"
+  },
+  {
+    "category": "Auth",
+    "testName": "Student Login",
+    "endpoint": "POST /auth/login",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Student JWT token received"
+  },
+  {
+    "category": "Auth",
+    "testName": "Register New User",
+    "endpoint": "POST /auth/register",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "Created user user_88438"
+  },
+  {
+    "category": "Auth",
+    "testName": "Get Profile (/auth/me)",
+    "endpoint": "GET /auth/me",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Returned user: admin"
+  },
+  {
+    "category": "Auth",
+    "testName": "Reject Request Without Token",
+    "endpoint": "GET /departments",
+    "expectedStatus": "401/403",
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Unauthenticated access rejected"
+  },
+  {
+    "category": "Auth",
+    "testName": "Reject Invalid Token",
+    "endpoint": "GET /departments",
+    "expectedStatus": "401/403",
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Invalid token rejected"
+  },
+  {
+    "category": "Departments",
+    "testName": "Create Department",
+    "endpoint": "POST /departments",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 14, Code: DEPT_8765"
+  },
+  {
+    "category": "Departments",
+    "testName": "Get All Departments",
+    "endpoint": "GET /departments",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 5"
+  },
+  {
+    "category": "Departments",
+    "testName": "Get Department by ID",
+    "endpoint": "GET /departments/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 14"
+  },
+  {
+    "category": "Departments",
+    "testName": "Update Department",
+    "endpoint": "PUT /departments/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated name verified"
+  },
+  {
+    "category": "Faculty",
+    "testName": "Create Faculty",
+    "endpoint": "POST /faculty",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 12, Email: prof_8765@university.edu"
+  },
+  {
+    "category": "Faculty",
+    "testName": "Get All Faculty",
+    "endpoint": "GET /faculty",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 2"
+  },
+  {
+    "category": "Faculty",
+    "testName": "Get Faculty by ID",
+    "endpoint": "GET /faculty/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 12"
+  },
+  {
+    "category": "Faculty",
+    "testName": "Update Faculty",
+    "endpoint": "PUT /faculty/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated designation"
+  },
+  {
+    "category": "Courses",
+    "testName": "Create Course",
+    "endpoint": "POST /courses",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 16, Code: CS_8765"
+  },
+  {
+    "category": "Courses",
+    "testName": "Get All Courses",
+    "endpoint": "GET /courses",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 2"
+  },
+  {
+    "category": "Courses",
+    "testName": "Get Course by ID",
+    "endpoint": "GET /courses/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 16"
+  },
+  {
+    "category": "Courses",
+    "testName": "Update Course",
+    "endpoint": "PUT /courses/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated course title"
+  },
+  {
+    "category": "Students",
+    "testName": "Create Student",
+    "endpoint": "POST /students",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 41, Email: student_8765@gmail.com"
+  },
+  {
+    "category": "Students",
+    "testName": "Get All Students",
+    "endpoint": "GET /students",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Students",
+    "testName": "Get Student by ID",
+    "endpoint": "GET /students/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 41"
+  },
+  {
+    "category": "Students",
+    "testName": "Update Student",
+    "endpoint": "PUT /students/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated student age to 21"
+  },
+  {
+    "category": "Enrollment",
+    "testName": "Enroll Student in Course",
+    "endpoint": "POST /students/{sId}/courses/{cId}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Enrolled Student 41 in Course 16"
+  },
+  {
+    "category": "Enrollment",
+    "testName": "Get Student Courses",
+    "endpoint": "GET /students/{id}/courses",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Found course CS_8765"
+  },
+  {
+    "category": "Enrollment",
+    "testName": "Get Students in Course",
+    "endpoint": "GET /courses/{id}/students",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Found student 41"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Mark Attendance",
+    "endpoint": "POST /attendance",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 12, Status: PRESENT"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Get All Attendance",
+    "endpoint": "GET /attendance",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Get Attendance by ID",
+    "endpoint": "GET /attendance/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 12"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Get Attendance by Student",
+    "endpoint": "GET /attendance/student/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Get Attendance by Course",
+    "endpoint": "GET /attendance/course/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Update Attendance",
+    "endpoint": "PUT /attendance/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated status to ABSENT"
+  },
+  {
+    "category": "Marks",
+    "testName": "Enter Marks",
+    "endpoint": "POST /marks",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 12, Score: 89.5/100"
+  },
+  {
+    "category": "Marks",
+    "testName": "Get All Marks",
+    "endpoint": "GET /marks",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Marks",
+    "testName": "Get Marks by ID",
+    "endpoint": "GET /marks/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 12"
+  },
+  {
+    "category": "Marks",
+    "testName": "Get Marks by Student",
+    "endpoint": "GET /marks/student/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Marks",
+    "testName": "Get Marks by Course",
+    "endpoint": "GET /marks/course/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Marks",
+    "testName": "Update Marks",
+    "endpoint": "PUT /marks/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated score to 96.0"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Create Assignment",
+    "endpoint": "POST /assignments",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "ID: 12"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Get All Assignments",
+    "endpoint": "GET /assignments",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 2"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Get Assignment by ID",
+    "endpoint": "GET /assignments/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "ID: 12"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Get Assignments by Course",
+    "endpoint": "GET /assignments/course/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Get Assignments by Faculty",
+    "endpoint": "GET /assignments/faculty/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Count: 1"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Update Assignment",
+    "endpoint": "PUT /assignments/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Updated title"
+  },
+  {
+    "category": "Security",
+    "testName": "Faculty Create Course",
+    "endpoint": "POST /courses",
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "status": "PASS",
+    "details": "Faculty authorized to create course (ID: 17)"
+  },
+  {
+    "category": "Security",
+    "testName": "Faculty Create Dept (Forbidden)",
+    "endpoint": "POST /departments",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Rejected with 403 Forbidden"
+  },
+  {
+    "category": "Security",
+    "testName": "Student Create Course (Forbidden)",
+    "endpoint": "POST /courses",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Rejected with 403 Forbidden"
+  },
+  {
+    "category": "Security",
+    "testName": "Student Mark Attendance (Forbidden)",
+    "endpoint": "POST /attendance",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Rejected with 403 Forbidden"
+  },
+  {
+    "category": "Security",
+    "testName": "Student Enter Marks (Forbidden)",
+    "endpoint": "POST /marks",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Rejected with 403 Forbidden"
+  },
+  {
+    "category": "Security",
+    "testName": "Student Read Attendance (Allowed)",
+    "endpoint": "GET /attendance/student/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Student read access permitted"
+  },
+  {
+    "category": "Security",
+    "testName": "Faculty Delete Dept (Forbidden)",
+    "endpoint": "DELETE /departments/{id}",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "status": "PASS",
+    "details": "Rejected with 403 Forbidden"
+  },
+  {
+    "category": "Validation",
+    "testName": "Empty Required Fields",
+    "endpoint": "POST /departments",
+    "expectedStatus": 400,
+    "actualStatus": 400,
+    "status": "PASS",
+    "details": "Validation error list returned"
+  },
+  {
+    "category": "Validation",
+    "testName": "Invalid Email Format",
+    "endpoint": "POST /faculty",
+    "expectedStatus": 400,
+    "actualStatus": 400,
+    "status": "PASS",
+    "details": "Rejected invalid email"
+  },
+  {
+    "category": "Validation",
+    "testName": "Duplicate Department Code",
+    "endpoint": "POST /departments",
+    "expectedStatus": 409,
+    "actualStatus": 409,
+    "status": "PASS",
+    "details": "Rejected with 409 Conflict"
+  },
+  {
+    "category": "Validation",
+    "testName": "Duplicate Course Code",
+    "endpoint": "POST /courses",
+    "expectedStatus": 409,
+    "actualStatus": 409,
+    "status": "PASS",
+    "details": "Rejected with 409 Conflict"
+  },
+  {
+    "category": "Validation",
+    "testName": "Duplicate Faculty Email",
+    "endpoint": "POST /faculty",
+    "expectedStatus": 409,
+    "actualStatus": 409,
+    "status": "PASS",
+    "details": "Rejected with 409 Conflict"
+  },
+  {
+    "category": "Validation",
+    "testName": "Nonexistent Department ID",
+    "endpoint": "POST /courses",
+    "expectedStatus": 404,
+    "actualStatus": 404,
+    "status": "PASS",
+    "details": "Rejected with 404 Not Found"
+  },
+  {
+    "category": "Validation",
+    "testName": "Nonexistent Student ID",
+    "endpoint": "POST /marks",
+    "expectedStatus": 404,
+    "actualStatus": 404,
+    "status": "PASS",
+    "details": "Rejected with 404 Not Found"
+  },
+  {
+    "category": "Validation",
+    "testName": "Marks > Max Marks",
+    "endpoint": "POST /marks",
+    "expectedStatus": 400,
+    "actualStatus": 400,
+    "status": "PASS",
+    "details": "Rejected marksObtained > maxMarks"
+  },
+  {
+    "category": "Validation",
+    "testName": "Negative Marks",
+    "endpoint": "POST /marks",
+    "expectedStatus": 400,
+    "actualStatus": 400,
+    "status": "PASS",
+    "details": "Rejected negative marks"
+  },
+  {
+    "category": "Pagination",
+    "testName": "Students Pagination",
+    "endpoint": "GET /students?page=0&size=2",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Total elements: 1"
+  },
+  {
+    "category": "Search",
+    "testName": "Filter Faculty by Dept",
+    "endpoint": "GET /faculty?departmentId={id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Found 1 faculty"
+  },
+  {
+    "category": "Search",
+    "testName": "Search Course by Name",
+    "endpoint": "GET /courses?name=...",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Found 1 courses"
+  },
+  {
+    "category": "Search",
+    "testName": "Filter Attendance by Date",
+    "endpoint": "GET /attendance?date=...",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Found 1 records"
+  },
+  {
+    "category": "Attendance",
+    "testName": "Delete Attendance",
+    "endpoint": "DELETE /attendance/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted attendance"
+  },
+  {
+    "category": "Marks",
+    "testName": "Delete Marks",
+    "endpoint": "DELETE /marks/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted marks"
+  },
+  {
+    "category": "Assignments",
+    "testName": "Delete Assignment",
+    "endpoint": "DELETE /assignments/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted assignment"
+  },
+  {
+    "category": "Enrollment",
+    "testName": "Drop Course for Student",
+    "endpoint": "DELETE /students/{sId}/courses/{cId}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Dropped course"
+  },
+  {
+    "category": "Students",
+    "testName": "Delete Student",
+    "endpoint": "DELETE /students/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted student"
+  },
+  {
+    "category": "Courses",
+    "testName": "Delete Course",
+    "endpoint": "DELETE /courses/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted primary course"
+  },
+  {
+    "category": "Courses",
+    "testName": "Delete Secondary Course",
+    "endpoint": "DELETE /courses/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted faculty-created course"
+  },
+  {
+    "category": "Faculty",
+    "testName": "Delete Faculty",
+    "endpoint": "DELETE /faculty/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted faculty"
+  },
+  {
+    "category": "Departments",
+    "testName": "Delete Department",
+    "endpoint": "DELETE /departments/{id}",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "status": "PASS",
+    "details": "Deleted department"
+  }
+]

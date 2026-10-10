@@ -1,0 +1,650 @@
+﻿[
+    {
+        "Category":  "Auth",
+        "TestName":  "Admin Login",
+        "Endpoint":  "POST /auth/login",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Auth",
+        "TestName":  "Faculty Login",
+        "Endpoint":  "POST /auth/login",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Auth",
+        "TestName":  "Student Login",
+        "Endpoint":  "POST /auth/login",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Auth",
+        "TestName":  "Register New User",
+        "Endpoint":  "POST /auth/register",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Auth",
+        "TestName":  "Get Current User Profile",
+        "Endpoint":  "GET /auth/me",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Auth",
+        "TestName":  "Reject Request Without Token",
+        "Endpoint":  "GET /departments",
+        "ExpectedStatus":  "401/403",
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Got "
+    },
+    {
+        "Category":  "Auth",
+        "TestName":  "Reject Invalid Token",
+        "Endpoint":  "GET /departments",
+        "ExpectedStatus":  "401/403",
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Got "
+    },
+    {
+        "Category":  "Departments",
+        "TestName":  "Create Department",
+        "Endpoint":  "POST /departments",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Departments",
+        "TestName":  "Get All Departments",
+        "Endpoint":  "GET /departments",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Departments",
+        "TestName":  "Get Department By ID",
+        "Endpoint":  "GET /departments/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Departments",
+        "TestName":  "Update Department",
+        "Endpoint":  "PUT /departments/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Faculty",
+        "TestName":  "Create Faculty",
+        "Endpoint":  "POST /faculty",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Faculty",
+        "TestName":  "Get All Faculty",
+        "Endpoint":  "GET /faculty",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Faculty",
+        "TestName":  "Get Faculty By ID",
+        "Endpoint":  "GET /faculty/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Faculty",
+        "TestName":  "Update Faculty",
+        "Endpoint":  "PUT /faculty/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Courses",
+        "TestName":  "Create Course",
+        "Endpoint":  "POST /courses",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Courses",
+        "TestName":  "Get All Courses",
+        "Endpoint":  "GET /courses",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Courses",
+        "TestName":  "Get Course By ID",
+        "Endpoint":  "GET /courses/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Courses",
+        "TestName":  "Update Course",
+        "Endpoint":  "PUT /courses/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Students",
+        "TestName":  "Create Student",
+        "Endpoint":  "POST /students",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Students",
+        "TestName":  "Get All Students",
+        "Endpoint":  "GET /students",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Students",
+        "TestName":  "Get Student By ID",
+        "Endpoint":  "GET /students/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Students",
+        "TestName":  "Update Student",
+        "Endpoint":  "PUT /students/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Enrollment",
+        "TestName":  "Enroll Student in Course",
+        "Endpoint":  "POST /students/{sId}/courses/{cId}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Enrollment",
+        "TestName":  "Get Student Courses",
+        "Endpoint":  "GET /students/{id}/courses",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Enrollment",
+        "TestName":  "Get Students In Course",
+        "Endpoint":  "GET /courses/{id}/students",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Mark Attendance",
+        "Endpoint":  "POST /attendance",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Get All Attendance",
+        "Endpoint":  "GET /attendance",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Get Attendance By ID",
+        "Endpoint":  "GET /attendance/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Get Attendance By Student",
+        "Endpoint":  "GET /attendance/student/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Get Attendance By Course",
+        "Endpoint":  "GET /attendance/course/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Update Attendance",
+        "Endpoint":  "PUT /attendance/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Enter Marks",
+        "Endpoint":  "POST /marks",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Get All Marks",
+        "Endpoint":  "GET /marks",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Get Marks By ID",
+        "Endpoint":  "GET /marks/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Get Marks By Student",
+        "Endpoint":  "GET /marks/student/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Get Marks By Course",
+        "Endpoint":  "GET /marks/course/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Update Marks",
+        "Endpoint":  "PUT /marks/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Create Assignment",
+        "Endpoint":  "POST /assignments",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Get All Assignments",
+        "Endpoint":  "GET /assignments",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Get Assignment By ID",
+        "Endpoint":  "GET /assignments/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Get Assignments By Course",
+        "Endpoint":  "GET /assignments/course/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Get Assignments By Faculty",
+        "Endpoint":  "GET /assignments/faculty/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Update Assignment",
+        "Endpoint":  "PUT /assignments/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Faculty Create Course",
+        "Endpoint":  "POST /courses",
+        "ExpectedStatus":  201,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Faculty Create Dept (Forbidden)",
+        "Endpoint":  "POST /departments",
+        "ExpectedStatus":  403,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 403, got "
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Student Create Course (Forbidden)",
+        "Endpoint":  "POST /courses",
+        "ExpectedStatus":  403,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 403, got "
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Student Mark Attendance (Forbidden)",
+        "Endpoint":  "POST /attendance",
+        "ExpectedStatus":  403,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 403, got "
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Student Enter Marks (Forbidden)",
+        "Endpoint":  "POST /marks",
+        "ExpectedStatus":  403,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 403, got "
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Student Read Attendance (Allowed)",
+        "Endpoint":  "GET /attendance/student/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Security",
+        "TestName":  "Faculty Delete Dept (Forbidden)",
+        "Endpoint":  "DELETE /departments/{id}",
+        "ExpectedStatus":  403,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 403, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Empty Required Fields",
+        "Endpoint":  "POST /departments",
+        "ExpectedStatus":  400,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Invalid Email Format",
+        "Endpoint":  "POST /faculty",
+        "ExpectedStatus":  400,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Duplicate Department Code",
+        "Endpoint":  "POST /departments",
+        "ExpectedStatus":  409,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 409, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Duplicate Course Code",
+        "Endpoint":  "POST /courses",
+        "ExpectedStatus":  409,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 409, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Duplicate Faculty Email",
+        "Endpoint":  "POST /faculty",
+        "ExpectedStatus":  409,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 409, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Nonexistent Department ID",
+        "Endpoint":  "POST /courses",
+        "ExpectedStatus":  404,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 404, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Nonexistent Student ID",
+        "Endpoint":  "POST /marks",
+        "ExpectedStatus":  404,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 404, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Marks \u003e MaxMarks",
+        "Endpoint":  "POST /marks",
+        "ExpectedStatus":  400,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 400, got "
+    },
+    {
+        "Category":  "Validation",
+        "TestName":  "Negative Marks",
+        "Endpoint":  "POST /marks",
+        "ExpectedStatus":  400,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  "Expected 400, got "
+    },
+    {
+        "Category":  "Pagination",
+        "TestName":  "Students Pagination",
+        "Endpoint":  "GET /students?page=0\u0026size=2",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Search",
+        "TestName":  "Filter Faculty by Dept",
+        "Endpoint":  "GET /faculty?departmentId={id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Search",
+        "TestName":  "Search Course by Name",
+        "Endpoint":  "GET /courses?name=...",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Search",
+        "TestName":  "Filter Attendance by Date",
+        "Endpoint":  "GET /attendance?date=...",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Attendance",
+        "TestName":  "Delete Attendance",
+        "Endpoint":  "DELETE /attendance/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Marks",
+        "TestName":  "Delete Marks",
+        "Endpoint":  "DELETE /marks/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Assignments",
+        "TestName":  "Delete Assignment",
+        "Endpoint":  "DELETE /assignments/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Enrollment",
+        "TestName":  "Drop Course for Student",
+        "Endpoint":  "DELETE /students/{sId}/courses/{cId}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Students",
+        "TestName":  "Delete Student",
+        "Endpoint":  "DELETE /students/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Courses",
+        "TestName":  "Delete Course",
+        "Endpoint":  "DELETE /courses/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Faculty",
+        "TestName":  "Delete Faculty",
+        "Endpoint":  "DELETE /faculty/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    },
+    {
+        "Category":  "Departments",
+        "TestName":  "Delete Department",
+        "Endpoint":  "DELETE /departments/{id}",
+        "ExpectedStatus":  200,
+        "ActualStatus":  null,
+        "Status":  "FAIL",
+        "Details":  null
+    }
+]
