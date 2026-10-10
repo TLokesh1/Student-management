@@ -331,7 +331,7 @@ Foreign key constraints remain strictly enforced in MySQL without using unsafe g
 
 ## 16. Live Deployments
 
-- **Live Frontend Application (Render):** [https://student-management-frontend.onrender.com](https://student-management-frontend.onrender.com) *(Static Site)*
+- **Live Frontend Application (Render):** [https://student-management-app-ipur.onrender.com](https://student-management-app-ipur.onrender.com) *(React SPA Static Site)*
 - **Live Backend REST API (Render):** [https://student-management1-u69f.onrender.com](https://student-management1-u69f.onrender.com) *(Spring Boot + Docker)*
 - **Live MySQL Database:** Managed MySQL on Aiven Cloud
 
