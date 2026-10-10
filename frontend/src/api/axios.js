@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Vite proxy forwards /auth, /students, etc. to http://localhost:8080
 // Direct backend URL fallback if running outside Vite proxy
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+const BASE_URL = import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
 
 const api = axios.create({
   baseURL: BASE_URL,

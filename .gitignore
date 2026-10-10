@@ -1,8 +1,30 @@
 HELP.md
 target/
-.mvn/wrapper/maven-wrapper.jar
+**/target/
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Node & Frontend
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & credentials
+.env
+.env.*
+*.env
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
 .apt_generated
