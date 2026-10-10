@@ -327,6 +327,17 @@ Foreign key constraints remain strictly enforced in MySQL without using unsafe g
 
 ---
 
-## 16. Repository Source of Truth
+---
+
+## 16. Live Deployments
+
+- **Live Frontend Application (Render):** [https://student-management-frontend.onrender.com](https://student-management-frontend.onrender.com) *(Static Site)*
+- **Live Backend REST API (Render):** [https://student-management1-u69f.onrender.com](https://student-management1-u69f.onrender.com) *(Spring Boot + Docker)*
+- **Live MySQL Database:** Managed MySQL on Aiven Cloud
+
+---
+
+## 17. Repository Source of Truth
 
 - **GitHub Repository:** [https://github.com/TLokesh1/Student-management](https://github.com/TLokesh1/Student-management)
+
